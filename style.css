@@ -5,7 +5,7 @@
   }
 
   h1 {
-    text-align: center;
+    text-align: left;
   }
 
   .container {
@@ -214,10 +214,22 @@ header.sticky
 .Products
 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    grid-template-rows: repeat(auto-fit, minmax(260px, auto));
     gap: 2rem;
 }
-.Products-text h5
+/*.row{
+    position: relative;
+    transition: all .40s;
+}
+.row img{
+    width: 100%;
+    height: auto;
+    transition: all .40s;
+} */
+.row img:hover{
+    transform: scale(0.9);
+}
+.Products-text 
 {
     position: absolute;
     top: 13px;
@@ -229,4 +241,51 @@ header.sticky
     background-color: aquamarine;
     padding: 3px 10px;
     border-radius: 2px;
+}
+.heart-icon:hover
+{
+    color: orangered;
+}
+.ratting
+{
+    color: goldenrod;
+    font-size: 18px;
+}
+.Price h4
+{
+    color: black;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.Price P
+{
+    color: rgb(43, 42, 42);
+    font-size: 14px;
+    font-weight: 600;
+}
+.Client-Reviews
+{
+    background-color: rgb(231, 221, 210);
+    text-align: center;
+}
+.Reviews
+{
+    text-align: center;
+}
+.Reviews h3
+{
+    color: black;
+    font-size: 25px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+}
+.Reviews p
+{
+    color: rgb(53, 52, 52);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25;
+    margin-bottom: 10px;
 }
